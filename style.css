@@ -1,0 +1,106 @@
+html,
+body {
+    padding: 0px;
+    margin: 0px;
+    background: #191a1d;
+    font-family: 'VT323', monospace;
+    color: #FFF;
+    height: 100%;
+}
+
+canvas {
+    background: none;
+    margin: auto;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.main {
+    position: absolute;
+    top: 94%;
+    left: 2%;
+}
+
+ul {
+    display: flex;
+    text-align: center;
+    position: absolute;
+    top: 60%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+}
+
+ul li {
+    background: #000;
+    margin: 10px;
+    list-style: none;
+    font-size: 24px;
+    transition: .5s;
+}
+
+ul li a {
+    width: 60px;
+    padding: 16px 0;
+    display: block;
+    color: #fff;
+}
+
+.Button {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    padding-right: 15px !important;
+}
+
+.Button:hover {
+    background-color: #F44;
+}
+
+.btn-resume {
+    position: absolute;
+    top: 72%;
+    left: 45%;
+    /* padding-right: 20px; */
+}
+
+#heart {
+    margin-right: -12px;
+    margin-left: -4px;
+}
+
+img {
+    max-width: 100%;
+}
+
+@media screen and (max-width: 1060px) {
+    #primary {
+        width: 67%;
+    }
+    #secondary {
+        width: 30%;
+        margin-left: 3%;
+    }
+}
+
+
+/* Tabled Portrait */
+
+@media screen and (max-width: 768px) {
+    #primary {
+        width: 100%;
+    }
+    #secondary {
+        width: 100%;
+        margin: 0;
+        border: none;
+    }
+}
